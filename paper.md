@@ -48,18 +48,24 @@ performing numerical orbit integration).
 
 Considering that the input signal has a Gaussian behavior (pixels of stars), we propose the use of an IIR (infinite impulse response) filter to estimate the central coordinates of the centroids. For this purpose, it is possible to use a first-order filter (applied separately on each axis of the image) and with a gain that is constant and smaller than one, as presented in the following equations:
 
-     $$X_{n} = [x_{n}, y_{n}] \\
-     G_{n} = a^{n} \\
-     Y_{n} = G_{n} \cdot X_{n} + (1 - G_{n}) \cdot Y_{n-1}$$
+\begin{subequations}
+\begin{align}
+    & X_{n} = [x_{n}, y_{n}] \\
+    & G_{n} = a^{n} \\
+    & Y_{n} = G_{n} \cdot X_{n} + (1 - G_{n}) \cdot Y_{n-1}
+\end{align}
+\end{subequations}
 
 with:
 
-    $$\left\{ \begin{array}{l}
+\begin{equation}
+    \left\{ \begin{array}{l}
         Y_{0} = X_{0} \\
         a = 0.8 \\
-    \end{array}\right.$$
-
+    \end{array}\right.
+\end{equation}
 where:
+
     - $x$ is a pixel position in the x-axis;
     - $y$ is a pixel position in the y-axis;
     - $X$ is the measured value (x and y-axis coordinates);
