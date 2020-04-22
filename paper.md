@@ -12,10 +12,6 @@ authors:
     affiliation: 1
   - name: Victor Hugo Schulz
     affiliation: 2
-  - Laio Oriel Seman
-    affiliation: 1
-  - Eduardo Augusto Bezerra
-    affiliation: 1
 affiliations:
  - name: Space Technology Research Laboratory (SpaceLab), Universidade Federal de Santa Catarina
    index: 1
