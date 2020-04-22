@@ -20,6 +20,7 @@ affiliations:
  - name: Applied Computer Science Master Program, Itajaí Valley University (UNIVALI)
    index: 3
 date: 19 April 2020
+bibliography: paper.bib
 
 # Optional fields if submitting to a AAS journal too, see this blog post:
 # https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
