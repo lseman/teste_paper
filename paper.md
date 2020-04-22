@@ -66,13 +66,13 @@ with:
 \end{equation}
 where:
 
-    - $x$ is a pixel position in the x-axis;
-    - $y$ is a pixel position in the y-axis;
-    - $X$ is the measured value (x and y-axis coordinates);
-    - $G_{n}$ is the weight of the current pixel;
-    - $a$ is an optimal constant to minimize the centroid position error;
-    - $Y_{n}$ is the estimation in the current iteration;
-    - $Y_{n-1}$ is the estimation of the previous iteration.
+- $x$ is a pixel position in the x-axis;
+- $y$ is a pixel position in the y-axis;
+- $X$ is the measured value (x and y-axis coordinates);
+- $G_{n}$ is the weight of the current pixel;
+- $a$ is an optimal constant to minimize the centroid position error;
+- $Y_{n}$ is the estimation in the current iteration;
+- $Y_{n-1}$ is the estimation of the previous iteration.
 
 To illustrate this process, we have matrix \eqref{eq:ex-single-star-matrix}, which represents a hypothetical image with a single star. Upon applying the previous equations to this matrix, after it goes through the threshold filter with a threshold equal to 150, we arrive at the results of \autoref{fig:kalman-values}. In this example, the system origin is the upper left corner, and the reading direction is from left to right, and from top to bottom.
 
